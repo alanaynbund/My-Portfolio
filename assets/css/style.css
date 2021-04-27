@@ -8,6 +8,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(143, 179, 233, 0.712);
 }
 header {
     padding: 20px 35px;
@@ -176,4 +177,36 @@ header nav ul li a {
     background-image: url(../images/run\ buddy.png);
     margin: 10px;
     background-size: cover;
+}
+
+.run:hover::after {
+    background-image: yellow;
+}
+
+footer {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+footer h3 {
+    font-size: 35px;
+    padding-right: 30px;
+    border-right: 3px solid black;
+    text-align: right;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    flex: 1;
+    font-size: 28px;
 }
