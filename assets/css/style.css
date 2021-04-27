@@ -21,6 +21,7 @@ header h1 {
     padding: 10px 20px;
     background-color: var(--primary-color);
     font-size: 38px;
+    left: 100px;
 }
 header nav {
     margin: 7px 0;
@@ -44,4 +45,84 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-bottom: 5px solid var(--primary-color);
     margin-left: 25px;
+}
+
+.hero {
+    background-image: url("../images/83f04bd0535806d9bd1779b3c4025968.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 280px;
+    background-position: center;
+    position: relative;
+}
+
+.hero div {
+    padding: 10px 25px;
+    background-color: hotpink;
+    font-size: 28px;
+    position: absolute;
+    top: 180px;
+    right: 200px;
+}
+
+.about-me {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me h3 {
+    font-size: 42px;
+    text-align: right;
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 50%;
+    font-size: 22px;
+    padding-left: 50px;
+    border-left: 3px solid hotpink;
+}
+
+.work-section {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.work-section h3 {
+    font-size: 42px;
+
+}
+
+.surf-report {
+    width: 1000px;
+    height: 500px;
+    border: 3px solid rgb(207, 136, 29);
+    position: relative;
+    background-image: url(../images/beach.jpg);
+}
+
+.report-info {
+    bottom: 50px;
+    position:absolute;
+    padding: 10px;
+    background-color: rgb(207, 136, 29);
+}
+
+.cards {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin: 0 auto;
+ flex-direction: column;
 }
