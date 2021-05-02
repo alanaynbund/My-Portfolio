@@ -249,9 +249,10 @@ footer ul li {
         justify-content: center;
     }
 
-    .about-me h2 {
-        width: 100%;
+    .section-title {
         text-align: center;
+        width: 100%;
+        justify-content: center;
     }
 
     .about {
@@ -265,7 +266,12 @@ footer ul li {
     .cards {
         justify-content: center;
     }
-    
+    .section-title {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
     header nav ul {
         margin-top: 20px;
         width: 100%;
