@@ -78,7 +78,7 @@ header nav ul li a {
     justify-content: space-between;
 }
 
-.about-me h3 {
+.about-me h2 {
     font-size: 42px;
     text-align: right;
     padding-right: 30px;
@@ -95,18 +95,24 @@ header nav ul li a {
 }
 
 .work-section {
-    margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
     padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.work-section h3 {
+.work-section h2 {
     font-size: 42px;
     text-align: center;
     margin: 0 auto 35px auto;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid rgb(207, 136, 29) ;
+}
+
+.flex-column {
+    width: 25%;
+    border-right: 3px solid rgb(207, 136, 29);
 }
 
 .surf-report {
@@ -130,7 +136,7 @@ header nav ul li a {
     background-color: rgb(207, 136, 29);
 }
 .cards {
- margin: 0 auto;
+ width: 70%;
 }
 
 .flex-row {
@@ -179,9 +185,6 @@ header nav ul li a {
     background-size: cover;
 }
 
-.run:hover::after {
-    background-image: yellow;
-}
 
 footer {
     margin: 50px auto;
@@ -209,4 +212,81 @@ footer ul li {
     border-bottom: 2px solid black;
     flex: 1;
     font-size: 28px;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 20px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer ul li{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .work-section {
+        width: 100%;
+    }
+
+    .flex-column {
+        width: 100%;
+        border:none;
+    }
+
+    .cards {
+        margin: 0 auto;
+    }
+
+    footer ul li {
+        justify-content: center;
+    }
+
+    .about-me h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        border: none;
+        width: 100%;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cards {
+        justify-content: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer ul li{
+        justify-content: center;
+    }
 }
